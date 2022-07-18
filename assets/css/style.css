@@ -18,7 +18,6 @@ body {
 
 .banner {
   color: #efefef;
-  padding: 4rem 10rem;
 }
 .banner .containers .title {
   font-weight: bold;
@@ -71,25 +70,27 @@ body {
   background-color: rgba(211, 30, 30, 0.6823529412);
 }
 .banner .containers form .validationMassage {
-  position: absolute;
-  left: 0;
-  top: 55px;
   font-size: 14px;
+  bottom: -20px;
 }
 
-.ajax-section div .cities {
-  display: grid;
-  grid-gap: 32px 20px;
-  grid-template-columns: repeat(4, 1fr);
+.ajax-section div .row {
+  width: 100%;
 }
-.ajax-section div .cities li.city {
+.ajax-section div .row .cities {
+  flex-wrap: wrap;
+}
+.ajax-section div .row .cities li.city {
+  min-width: 250px !important;
+  max-width: 250px !important;
+  display: block;
   position: relative;
-  padding: 40px 10%;
+  padding: 40px;
   border-radius: 20px;
-  background: #efefef;
+  background-color: #efefef;
   color: #53627c;
 }
-.ajax-section div .cities li.city::after {
+.ajax-section div .row .cities li.city::after {
   content: "";
   width: 90%;
   height: 50px;
@@ -101,14 +102,17 @@ body {
   border-radius: 20px;
   background: #fff;
 }
-.ajax-section div .cities li.city .city-temp {
+.ajax-section div .row .cities li.city .city-temp {
   font-size: 5rem;
   font-weight: bold;
   margin-top: 10px;
   color: #1e2432;
 }
-.ajax-section div .cities li.city figure .city-icon {
+.ajax-section div .row .cities li.city figure .city-icon {
   margin-top: 10px;
   width: 100px;
   height: 100px;
+}
+.ajax-section div .row .cities li.city figure figurecaption {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

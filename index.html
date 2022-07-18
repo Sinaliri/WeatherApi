@@ -11,19 +11,22 @@
 </head>
 <body>
     <section class="banner">
-        <div class="containers">
-            <h1 class="title">Weather APP</h1>
-            <form>
-                <input type="text" placeholder="Search for a City" id="" autofocus>
+        <div class="containers d-flex flex-column  justify-content-md-center justify-content-start  ">
+            <h1 class="title pl-4 m-auto">Weather APP</h1>
+            <form class="col-sm-12 col-lg-6 w-100 m-auto pt-5">
+                <input  type="text" placeholder="Search for a City" id="" autofocus>
                 <button type="submit">Submit</button>
-                <span class="validationMassage">SFSDF</span>
+                <span class="validationMassage position-absolute">SFSDF</span>
             </form>
         </div>
     </section>
-    <section class="ajax-section m-auto">
-        <div class="container">
-            <ul class="cities text-white">sss</ul>
-        </div>
+    <section class="ajax-section m-auto mt-5">
+        <div class="container mt-5">
+          <div class="row">
+            <ul class="cities d-flex justify-content-center justify-content-lg-start text-white"></ul> 
+          </div>
+            
+           </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
