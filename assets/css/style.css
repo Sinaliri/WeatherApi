@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+body {
+  background-color: #080827;
+}
+
+.banner {
+  color: #efefef;
+  padding: 4rem 10rem;
+}
+.banner .containers .title {
+  font-weight: bold;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+.banner .containers form {
+  margin: 2rem 1rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 45%;
+}
+.banner .containers form input {
+  height: 3rem;
+  width: 80%;
+  padding: 1rem 0.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #efefef;
+  font-size: 2.5rem;
+  outline: none;
+  color: #fff;
+}
+.banner .containers form input::-moz-placeholder {
+  color: #fff;
+  font-size: 2rem;
+}
+.banner .containers form input:-ms-input-placeholder {
+  color: #fff;
+  font-size: 2rem;
+}
+.banner .containers form input::placeholder {
+  color: #fff;
+  font-size: 2rem;
+}
+.banner .containers form button {
+  height: 3.1rem;
+  padding: 0 1.5rem;
+  margin-left: 10px;
+  color: #fff;
+  background-color: #d31e1e;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+.banner .containers form button:hover {
+  background-color: rgba(211, 30, 30, 0.6823529412);
+}
+.banner .containers form .validationMassage {
+  position: absolute;
+  left: 0;
+  top: 55px;
+  font-size: 14px;
+}
+
+.ajax-section div .cities {
+  display: grid;
+  grid-gap: 32px 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.ajax-section div .cities li.city {
+  position: relative;
+  padding: 40px 10%;
+  border-radius: 20px;
+  background: #efefef;
+  color: #53627c;
+}
+.ajax-section div .cities li.city::after {
+  content: "";
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  bottom: -12px;
+  left: 5%;
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 20px;
+  background: #fff;
+}
+.ajax-section div .cities li.city .city-temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1e2432;
+}
+.ajax-section div .cities li.city figure .city-icon {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}/*# sourceMappingURL=style.css.map */
